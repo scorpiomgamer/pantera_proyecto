@@ -8,7 +8,7 @@ const pool = mysql.createPool(
         password: process.env.DB_PASSWORD,
         port: process.env.DB_PORT,
         database: process.env.DB_NAME,
-        connectionLimit: 10, 
+        connectionLimit: 10,
     }
 )
 const conectionPromise = pool.promise()
